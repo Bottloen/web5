@@ -1,0 +1,57 @@
+body{
+    background-color : peru;
+    color : #ecf0f1;
+    margin:auto;
+}
+
+.forms,
+.greet{
+    display:none;
+}
+
+.showing{
+    display:block;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity : 0.5;
+    }
+    from{
+        opacity : 1;
+    }
+}
+
+.bg-image{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    animation:fadeIn 1.5s linear;
+    margin:auto;
+}
+
+#textBox{
+    border-radius:20px;
+    border: 10px yellow double;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  font-family: system-ui, serif;
+  font-size: 1.5rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.js-weather{
+    width:80%;
+    height:20%;
+    text-align:right;
+}
